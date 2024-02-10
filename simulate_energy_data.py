@@ -37,3 +37,8 @@ energy_data = simulate_energy_data(start_date, end_date)
 
 # display the first few rows of the dataset
 print(energy_data.head())
+
+# save the DataFrame to a CSV file
+file_name = "simulated_energy_data.csv"
+energy_data.to_csv(file_name, index=False)
+print(f"Data saved to {file_name}")
